@@ -5,6 +5,6 @@ export function query() {
 }
 //注册
 export function register(paload) {
-  // console.log(paload)
-  // return request('http://148.70.121.59:9001/emstu/teacher/register',paload);
+  console.log(paload)
+  // return request('/api/emstu/teacher/register',paload);
 }
