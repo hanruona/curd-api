@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import styles from './index.css';
 import Echartss from "echarts-for-react"
+
 export default class index extends Component {
+
     render() {
         const option = {
             title: {
@@ -94,12 +96,21 @@ export default class index extends Component {
                     重点关注学生考试成绩统计图
                 </div>
                 <div className={styles.zdianTitle}>
-                    <div>切换班级:</div>
-                    <div>
+                    <span>选择班级:</span>
+                    <div className={styles.ps}>
                         <p>1703C</p>
                         <p>1703E</p>
                         <p>1703E</p>
-                        <p>创建班级+</p>
+                        <p>1703E</p>
+                        <p>1703E</p>
+                        <p>1703E</p>
+                        <p>1703E</p>
+                    </div>
+                    <div className={styles.mingdan}>
+                        <p>名单:</p>
+                        <span>张三</span>
+                        <span>张立</span>
+                        <span>王强</span>
                     </div>
                     <div className={styles.postion}>
                         <p>
@@ -108,26 +119,20 @@ export default class index extends Component {
                         <span>柱形图/线图</span>
                     </div>
                 </div>
-                <div className={styles.addstudents}>
-                    <span>添加学生+:</span>
-                    <input type="text" placeholder="输入姓名" />
-                    <input type="text" placeholder="末位次数 " />
-                    <input type="text" placeholder="结对子，帮扶对象" />
-                    <button>添加</button>
-                </div>
-                {/* 新添成绩 */}
-                <div className={styles.addachievement}>
 
-                </div>
-                {/* 新添分析 */}
-                <div className={styles.addanalysis}></div>
                 <Echartss option={option} className={styles.charts}></Echartss>
                 <div className={styles.addbox}>
-                    <div className={styles.chengji}>添加成绩+</div>
-                    <div className={styles.fenxi}>添加分析和解决方案+</div>
-                    <div className={styles.allchenji}>查看和编辑该生所有的成绩</div>
+                    <div className={styles.addboxleft}>
+                        <h4>2019-08-30</h4>
+                        <h4>今日分析及解决方案</h4>
+                        <h4>点击查看历史记录</h4>
+                    </div>
+                    <div className={styles.addboxright}>
+                        <p>
+                            撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公
+                        </p>
+                    </div>
                 </div>
-
             </div>
         )
     }

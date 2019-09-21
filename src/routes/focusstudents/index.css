@@ -1,124 +1,294 @@
-.normal {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 2100px) and (min-width: 763px) {
+  .normal {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    width: 100%;
+    height: 10%;
+    background: #0076ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+  }
+  .zdianTitle {
+    width: 90%;
+    height: 120px;
+    border: 3px solid #ccc;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+  .zdianTitle > :nth-child(1) {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    text-align: end;
+    line-height: 120px;
+    padding-left: 40px;
+  }
+  .zdianTitle > :nth-child(2) {
+    display: flex;
+    width: 75%;
+    height: 100%;
+  }
+  .zdianTitle > :nth-child(2) > p {
+    width: 120px;
+    height: 50px;
+    background: #0076ff;
+    color: #fff;
+    margin: 30px 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .zdianTitle > :nth-child(2) > :nth-child(2),
+  .zdianTitle > :nth-child(2) > :nth-child(3) {
+    background: #e6f1fc;
+    color: #0076ff;
+    border: 1px solid #0076ff;
+  }
+  .zdianTitle > :nth-child(2) > :nth-child(4) {
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
+    background: #fff;
+    text-align: center;
+    font-family: Microsoft Yahei;
+    border: 1px solid rgba(187, 187, 187, 1);
+  }
+  .zdianTitle > :nth-child(3) {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    line-height: 120px;
+  }
+  .postion {
+    display: flex;
+    align-items: center;
+  }
+  .postion > p {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background: #a3d0fd;
+    position: relative;
+  }
+  .postion > p > span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1890ff;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+  }
+  .postion > span {
+    margin-left: 30px;
+  }
+  .addstudents {
+    width: 80%;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+  }
+  .addstudents > input {
+    width: 240px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    text-align: center;
+    color: #bbb;
+    margin: 0 20px;
+  }
+  .addstudents > span {
+    color: #bbb;
+    margin-right: 40px;
+  }
+  .addstudents > button {
+    width: 95px;
+    height: 40px;
+    background: #a3d0fd;
+    color: #0076ff;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 50px;
+  }
+
+  .charts {
+    height: 534px !important;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .addbox {
+    width: 90%;
+    height: 100px;
+    background: rgb(233, 218, 218);
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+  }
+  .addbox > .chengji {
+    width: 129px;
+    height: 44px;
+    background: #fff;
+    text-align: center;
+    line-height: 44px;
+    margin-left: 50px;
+    border: 1px solid #ccc;
+  }
+  .addbox > .fenxi {
+    width: 179px;
+    height: 44px;
+    background: #fff;
+    text-align: center;
+    line-height: 44px;
+    margin-left: 50px;
+  }
+  .addbox > .allchenji {
+    width: 244px;
+    height: 44px;
+    background: #fff;
+    text-align: center;
+    line-height: 44px;
+    margin-left: 1075px;
+  }
 }
-.header {
-  width: 100%;
-  height: 10%;
-  background: #0076ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 25px;
-}
-.zdianTitle {
-  width: 90%;
-  height: 120px;
-  border: 3px solid #ccc;
-  margin-top: 25px;
-  margin-left: 50%;
-  transform: translate(-50%);
-  display: flex;
-  justify-content: space-between;
-}
-.zdianTitle > :nth-child(1) {
-  display: flex;
-  width: 10%;
-  height: 100%;
-  text-align: end;
-  line-height: 120px;
-  padding-left: 40px;
-}
-.zdianTitle > :nth-child(2) {
-  display: flex;
-  width: 75%;
-  height: 100%;
-}
-.zdianTitle > :nth-child(2) > p {
-  width: 120px;
-  height: 50px;
-  background: #0076ff;
-  color: #fff;
-  margin: 30px 20px;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 50px;
-}
-.zdianTitle > :nth-child(2) > :nth-child(2),
-.zdianTitle > :nth-child(2) > :nth-child(3) {
-  background: #e6f1fc;
-  color: #0076ff;
-  border: 1px solid #0076ff;
-}
-.zdianTitle > :nth-child(2) > :nth-child(4) {
-  color: rgba(16, 16, 16, 1);
-  font-size: 14px;
-  background: #fff;
-  text-align: center;
-  font-family: Microsoft Yahei;
-  border: 1px solid rgba(187, 187, 187, 1);
-}
-.zdianTitle > :nth-child(3) {
-  display: flex;
-  width: 15%;
-  height: 100%;
-  text-align: center;
-  line-height: 120px;
-}
-.postion {
-  display: flex;
-  align-items: center;
-}
-.postion > p {
-  width: 60px;
-  height: 30px;
-  border-radius: 15px;
-  background: #a3d0fd;
-  position: relative;
-}
-.postion > p > span {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #1890ff;
-  position: absolute;
-  right: -10px;
-  top: -5px;
-}
-.postion > span {
-  margin-left: 30px;
-}
-.addstudents {
-  width: 80%;
-  height: 100px;
-  margin-top: 25px;
-  margin-left: 50%;
-  transform: translate(-50%);
-  display: flex;
-  align-items: center;
-}
-.addstudents > input {
-  width: 240px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #bbb;
-  text-align: center;
-  color: #bbb;
-  margin: 0 20px;
-}
-.addstudents > span {
-  color: #bbb;
-  margin-right: 40px;
-}
-.addstudents > button {
-  width: 95px;
-  height: 40px;
-  background: #a3d0fd;
-  color: #0076ff;
-  border: 0;
-  border-radius: 5px;
-  margin-left: 50px;
+@media screen and (min-width: 375px) and (max-width: 763px) {
+  .normal {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    width: 100%;
+    height: 8%;
+    background: #0076ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+  }
+  .zdianTitle {
+    width: 90%;
+    height: auto;
+    border: 2px solid #ccc;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .postion {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .postion > p {
+    width: 30px;
+    height: 15px;
+    border-radius: 15px;
+    background: #a3d0fd;
+    position: relative;
+  }
+  .postion > p > span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1890ff;
+    position: absolute;
+    right: -10px;
+    top: -2px;
+  }
+  .postion > span {
+    margin-left: 10px;
+  }
+  .zdianTitle > :nth-child(2) > p {
+    width: 90px;
+    height: 30px;
+    background: #0076ff;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  .zdianTitle > :nth-child(1) {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .addstudents {
+    width: 100%;
+    height: auto;
+  }
+  .addstudents > input {
+    width: 150px;
+    height: 38px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .addstudents button {
+    width: 95px;
+    height: 30px;
+    background: #a3d0fd;
+    color: #0076ff;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 138px;
+    margin-top: 20px;
+  }
+  .addstudents > span {
+    margin-left: 60px;
+  }
+  .addbox {
+    width: 100%;
+    height: 70px;
+    background: #ccc;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .addbox > .chengji {
+    width: 100px;
+    height: 34px;
+    background: #fff;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    font-size: 12px
+  }
+  .addbox > .fenxi {
+    width: 135px;
+    height: 34px;
+    background: #fff;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 5px;
+    font-size: 12px
+  }
+  .addbox > .allchenji {
+    width: 180px;
+    height: 34px;
+    background: #fff;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 5px;
+    font-size: 12px
+  }
 }

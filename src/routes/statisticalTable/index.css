@@ -1,259 +1,505 @@
-.normal {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 2100px) and (min-width: 763px) {
+  .normal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    width: 100%;
+    height: 10%;
+    background: #0076ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+  }
+  .editMack,
+  .delmack {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .delmack .delbox {
+    width: 300px;
+    height: 160px;
+    background: #fff;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10%;
+    box-shadow: 0 0 15px#ccc;
+    border-radius: 4px;
+  }
+  .deltitle {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+  .deltitle img {
+    width: 35px;
+    height: 40px;
+    margin: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .editMack .editBox {
+    width: 300px;
+    height: 431px;
+    background: #fff;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10%;
+    box-shadow: 0 0 15px#ccc;
+    border-radius: 4px;
+  }
+  .editMack .editBox .edittitle {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .editMack .editBox .edittitle :nth-child(1) {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .editMack .editBox .edittitle :nth-child(2) {
+    margin-right: 20px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .lilun {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .lilun :nth-child(1) {
+    margin-left: 30px;
+  }
+  .lilun :nth-child(2) {
+    margin-left: 20px;
+    border: 1px solid #dcdfe6;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #dcdfe6;
+  }
+  .jineng {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .jineng :nth-child(1) {
+    margin-left: 30px;
+  }
+  .jineng :nth-child(2) {
+    margin-left: 20px;
+    border: 1px solid #dcdfe6;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #dcdfe6;
+  }
+  .examination {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .examination > p {
+    width: 108px;
+    height: 40px;
+    border: 1px solid #0076ff;
+    color: #0076ff;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 30px;
+    border-radius: 5px;
+  }
+  .examination > p > input {
+    color: #fff;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    background: #0076ff;
+    margin-right: 10px;
+  }
+  .analysis {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+  }
+  .analysis > span {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .analysis > input {
+    margin-left: 10px;
+    border: 1px solid #dcdfe6;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #dcdfe6;
+  }
+  .button {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button button {
+    width: 80px;
+    height: 40px;
+    margin: 0 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .button :nth-child(1) {
+    border: 1px solid #ccc;
+    color: #ccc;
+  }
+  .button :nth-child(2) {
+    background: #0076ff;
+    color: #fff;
+  }
+  .title {
+    width: 1296px;
+    height: 100px;
+    border: 1px solid #bbb;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    position: relative;
+  }
+  .title :nth-child(1) {
+    width: 20%;
+  }
+  .title :nth-child(2) {
+    width: 20%;
+  }
+  .title :nth-child(3) {
+    width: 60%;
+    text-align: end;
+    position: relative;
+  }
+  .title :nth-child(3) input {
+    width: 280px;
+    height: 45px;
+    border: 1px solid #bbb;
+    color: #bbb;
+    text-indent: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .title :nth-child(3) span {
+    width: 20px;
+    height: 20px;
+    background: rgb(143, 132, 132);
+    color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+    right: 20px;
+    top: 13px;
+    font-size: 12px;
+  }
+  .show {
+    width: 280px;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 40px;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    box-shadow: 0 0 10px #ccc;
+  }
+  .show p {
+    margin-left: 10px;
+  }
+  .statisticalList {
+    width: 1298px;
+    height: 500px;
+    border: 1px solid #bbb;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+  }
+  td {
+    text-align: center;
+    height: 80px;
+  }
+  tr {
+    width: 1298px;
+    height: 80px;
+    display: block;
+    border-bottom: 1px solid #bbb;
+  }
+  td span {
+    cursor: pointer;
+  }
 }
-.header {
-  width: 100%;
-  height: 10%;
-  background: #0076ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 25px;
-}
-.editMack,
-.delmack {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  left: 0;
-  top: 0;
-}
-.delmack .delbox {
-  width: 483px;
-  height: 160px;
-  background: #fff;
-  margin-left: 50%;
-  transform: translate(-50%);
-  margin-top: 10%;
-  box-shadow: 0 0 15px#ccc;
-  border-radius: 4px;
-}
-.deltitle {
-  width: 100%;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-}
-.deltitle img {
-  width: 35px;
-  height: 40px;
-  margin: 10px 20px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.editMack .editBox {
-  width: 483px;
-  height: 431px;
-  background: #fff;
-  margin-left: 50%;
-  transform: translate(-50%);
-  margin-top: 10%;
-  box-shadow: 0 0 15px#ccc;
-  border-radius: 4px;
-}
-.editMack .editBox .edittitle {
-  width: 483px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.editMack .editBox .edittitle :nth-child(1) {
-  margin-left: 20px;
-  font-weight: bold;
-}
-.editMack .editBox .edittitle :nth-child(2) {
-  margin-right: 20px;
-  color: #ccc;
-  cursor: pointer;
-}
-.lilun {
-  width: 483px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-.lilun :nth-child(1) {
-  margin-left: 30px;
-}
-.lilun :nth-child(2) {
-  margin-left: 20px;
-  border: 1px solid #dcdfe6;
-  height: 40px;
-  width: 297px;
-  border-radius: 5px;
-  text-indent: 20px;
-  color: #dcdfe6;
-}
-.jineng {
-  width: 483px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-.jineng :nth-child(1) {
-  margin-left: 30px;
-}
-.jineng :nth-child(2) {
-  margin-left: 20px;
-  border: 1px solid #dcdfe6;
-  height: 40px;
-  width: 297px;
-  border-radius: 5px;
-  text-indent: 20px;
-  color: #dcdfe6;
-}
-.examination {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-.examination > p {
-  width: 108px;
-  height: 40px;
-  border: 1px solid #0076ff;
-  color: #0076ff;
-  text-align: center;
-  line-height: 40px;
-  margin-left: 30px;
-  border-radius: 5px;
-}
-.examination > p > input {
-  color: #fff;
-  border: 0;
-  width: 15px;
-  height: 15px;
-  background: #0076ff;
-  margin-right: 10px;
-}
-.analysis {
-  width: 100%;
-  height: 100px;
-  line-height: 100px;
-}
-.analysis > span {
-  margin-left: 10px;
-  font-size: 12px;
-}
-.analysis > input {
-  margin-left: 10px;
-  border: 1px solid #dcdfe6;
-  height: 50px;
-  width: 297px;
-  border-radius: 5px;
-  text-indent: 20px;
-  color: #dcdfe6;
-}
-.button {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
-}
-.button button {
-  width: 80px;
-  height: 40px;
-  margin: 0 10px;
-  border: 0;
-  border-radius: 5px;
-  background: #fff;
-  cursor: pointer;
-}
-.button :nth-child(1) {
-  border: 1px solid #ccc;
-  color: #ccc;
-}
-.button :nth-child(2) {
-  background: #0076ff;
-  color: #fff;
-}
-.title {
-  width: 1218px;
-  height: 100px;
-  border: 1px solid #bbb;
-  margin-left: 50%;
-  transform: translate(-50%);
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
-  align-items: center;
-  position: relative;
-}
-.title :nth-child(1) {
-  width: 20%;
-}
-.title :nth-child(2) {
-  width: 20%;
-}
-.title :nth-child(3) {
-  width: 60%;
-  text-align: end;
-  position: relative;
-}
-.title :nth-child(3) input {
-  width: 280px;
-  height: 45px;
-  border: 1px solid #bbb;
-  color: #bbb;
-  text-indent: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.title :nth-child(3) span {
-  width: 20px;
-  height: 20px;
-  background: rgb(143, 132, 132);
-  color: #ffff;
-  border-radius: 50%;
-  position: absolute;
-  text-align: center;
-  display: block;
-  line-height: 20px;
-  right: 20px;
-  top: 13px;
-  font-size: 12px;
-}
-.show {
-  width: 280px;
-  height: auto;
-  background: #fff;
-  border-radius: 5px;
-  position: absolute;
-  right: 40px;
-  top: -20px;
-  display: flex;
-  flex-direction: column;
-  z-index: 9;
-  box-shadow: 0 0 10px #ccc;
-}
-.show p {
-  margin-left: 10px;
-}
-.statisticalList {
-  width: 1298px;
-  height: 500px;
-  border: 1px solid #bbb;
-  margin-left: 50%;
-  transform: translate(-50%);
-  margin-top: 10px;
-}
-td {
-  text-align: center;
-  height: 80px;
-}
-tr {
-  width: 1298px;
-  height: 80px;
-  display: block;
-  border-bottom: 1px solid #bbb;
-}
-td span {
-  cursor: pointer;
+
+@media screen and (min-width: 375px) and (max-width: 763px) {
+  td {
+    text-align: center;
+    height: 60px;
+    font-size: 10px;
+  }
+  tr {
+    width: 100%;
+    height: 60px;
+    display: block;
+    border-bottom: 1px solid #bbb;
+  }
+  td span {
+    cursor: pointer;
+  }
+  .normal {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    width: 100%;
+    height: 8%;
+    background: #0076ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+  }
+  .title {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #bbb;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .title > :nth-child(1) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .title > :nth-child(3) input {
+    width: 150px;
+    height: 35px;
+    border: 1px solid #bbb;
+    color: #bbb;
+    text-indent: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: 12px;
+  }
+  .title > :nth-child(3) span {
+    width: 20px;
+    height: 20px;
+    background: rgb(143, 132, 132);
+    color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+    right: 25px;
+    top: 40px;
+    font-size: 12px;
+  }
+  .show {
+    width: 150px;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 151px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    box-shadow: 0 0 10px #ccc;
+  }
+  .show p {
+    margin-left: 10px;
+  }
+  .editMack,
+  .delmack {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .delmack .delbox {
+    width: 300px;
+    height: 160px;
+    background: #fff;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 65%;
+    box-shadow: 0 0 15px#ccc;
+    border-radius: 4px;
+  }
+  .deltitle {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+  .deltitle img {
+    width: 35px;
+    height: 40px;
+    margin: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .editMack .editBox {
+    width: 300px;
+    height: 431px;
+    background: #fff;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 33%;
+    box-shadow: 0 0 15px#ccc;
+    border-radius: 4px;
+  }
+  .editMack .editBox .edittitle {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .editMack .editBox .edittitle :nth-child(1) {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .editMack .editBox .edittitle :nth-child(2) {
+    margin-right: 20px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .lilun {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .lilun :nth-child(1) {
+    margin-left: 30px;
+  }
+  .lilun :nth-child(2) {
+    margin-left: 20px;
+    border: 1px solid #dcdfe6;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #dcdfe6;
+  }
+  .jineng {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .jineng :nth-child(1) {
+    margin-left: 30px;
+  }
+  .jineng :nth-child(2) {
+    margin-left: 20px;
+    border: 1px solid #dcdfe6;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #dcdfe6;
+  }
+  .examination {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .examination > p {
+    width: 108px;
+    height: 40px;
+    border: 1px solid #0076ff;
+    color: #0076ff;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 30px;
+    border-radius: 5px;
+  }
+  .examination > p > input {
+    color: #fff;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    background: #0076ff;
+    margin-right: 10px;
+  }
+  .analysis {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+  }
+  .analysis > span {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .analysis > input {
+    margin-left: 10px;
+    border: 1px solid #dcdfe6;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #dcdfe6;
+  }
+  .button {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button button {
+    width: 80px;
+    height: 40px;
+    margin: 0 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .button :nth-child(1) {
+    border: 1px solid #ccc;
+    color: #ccc;
+  }
+  .button :nth-child(2) {
+    background: #0076ff;
+    color: #fff;
+  }
 }

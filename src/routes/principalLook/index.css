@@ -1,0 +1,273 @@
+@media screen and (max-width: 2100px) and (min-width: 763px) {
+  .normal {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    width: 100%;
+    height: 10%;
+    background: #0076ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+  }
+  .zdianTitle {
+    width: 90%;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .mingdan {
+    position: absolute;
+    left: 30px;
+    top: 130px;
+    display: flex;
+  }
+  .mingdan span {
+    margin-left: 20px;
+  }
+  .zdianTitle > span {
+    width: 10%;
+    margin-top: 40px;
+    padding-left: 30px;
+  }
+  .ps {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ps > p:not(:first-child) {
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    background: #e6f1fc;
+    color: #0076ff;
+    border: 1px solid #0076ff;
+    margin-top: 20px;
+  }
+  .ps > :nth-child(1) {
+    width: 120px;
+    height: 50px;
+    background: #0076ff;
+    color: #fff;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+  }
+  .postion {
+    display: flex;
+    align-items: center;
+  }
+  .postion > p {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background: #a3d0fd;
+    position: relative;
+  }
+  .postion > p > span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1890ff;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+  }
+  .postion > span {
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+  .charts {
+    height: 534px !important;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .addbox {
+    width: 90%;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    border: 1px solid #009688;
+    margin-bottom: 35px;
+  }
+  .addbox .addboxleft {
+    width: 10%;
+  }
+  .addboxleft > h4 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .addboxleft :nth-child(1) {
+    color: #009688;
+  }
+  .addboxleft :nth-child(2) {
+    color: #009688;
+  }
+  .addboxright {
+    width: 90%;
+    height: 100%;
+    background: #009688;
+    color: #fff;
+  }
+  .addboxright p {
+    line-height: 35px;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 763px) {
+  .normal {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    width: 100%;
+    height: 8%;
+    background: #0076ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+  }
+  .zdianTitle {
+    width: 90%;
+    height: 280px;
+    border: 1px solid #ccc;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .mingdan {
+    position: absolute;
+    top: 178px;
+    left: 21px;
+    display: flex;
+  }
+  .mingdan span {
+    margin-left: 25px;
+  }
+  .postion {
+    position: absolute;
+  }
+  .zdianTitle > span {
+    opacity: 0;
+  }
+  .ps {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+  }
+  .ps > p:not(:first-child) {
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    background: #e6f1fc;
+    color: #0076ff;
+    border: 1px solid #0076ff;
+    margin-top: 20px;
+  }
+  .ps > :nth-child(1) {
+    width: 80px;
+    height: 30px;
+    background: #0076ff;
+    color: #fff;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .postion {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 224px;
+    left: 108px;
+  }
+  .postion > p {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background: #a3d0fd;
+    position: relative;
+  }
+  .postion > p > span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1890ff;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+  }
+  .postion > span {
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+  .charts {
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .addbox {
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    border: 1px solid #009688;
+    margin-bottom: 35px;
+  }
+  .addbox .addboxleft {
+    width: 30%;
+  }
+  .addboxleft > h4 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px
+  }
+  .addboxleft :nth-child(1) {
+    color: #009688;
+  }
+  .addboxleft :nth-child(2) {
+    color: #009688;
+  }
+  .addboxright {
+    width: 70%;
+    height: 100%;
+    background: #009688;
+    color: #fff;
+  }
+  .addboxright p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
