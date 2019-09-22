@@ -1,4 +1,4 @@
-import {register} from '../services/example';
+import { register, login } from '../services/example';
 export default {
 
     namespace: 'testlist',
@@ -11,15 +11,20 @@ export default {
     },
 
     effects: {
-        *updataRegister({ payload }, { call, put }) {  // eslint-disable-line
-            // console.log(payload)
-            yield call(register,payload)
+        //注册
+        *updataRegister({ payload }, { call, put }) {
+            yield call(register, payload)
+            // yield put({ type: 'save' });
+        },
+        //登录
+        *updataLogin({ payload }, { call, put }) {
+            return yield call(login, payload)
             // yield put({ type: 'save' });
         },
     },
 
     reducers: {
-       
+
     },
 
 };

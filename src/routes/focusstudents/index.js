@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import styles from './index.css';
 import Echartss from "echarts-for-react"
 export default class index extends Component {
+    lookallchengji = () => {
+        this.props.history.push('/statisticalTable')
+    }
     render() {
         const option = {
             title: {
@@ -125,7 +128,7 @@ export default class index extends Component {
                 <div className={styles.addbox}>
                     <div className={styles.chengji}>添加成绩+</div>
                     <div className={styles.fenxi}>添加分析和解决方案+</div>
-                    <div className={styles.allchenji}>查看和编辑该生所有的成绩</div>
+                    <div className={styles.allchenji} onClick={this.lookallchengji}>查看和编辑该生所有的成绩</div>
                 </div>
 
             </div>
